@@ -1,22 +1,41 @@
-// Gestion de la soumission du formulaire
-document.getElementById("login-form").addEventListener("submit", function (event) {
-    event.preventDefault(); // Empêcher le rechargement de la page
+// Gérer la création de compte (inscription)
+document.getElementById('signup-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Empêche la soumission du formulaire par défaut
 
-    // Récupérer les valeurs des champs
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
-    // Vérification simple (ajoutez votre propre logique ici)
-    if (username === "admin" && password === "1234") {
-        // Redirection vers la page principale après succès
-        window.location.href = "main.html";
+    // Vérifie si les champs ne sont pas vides
+    if (username && email && password) {
+        // Sauvegarder les données dans le LocalStorage
+        localStorage.setItem('username', username);
+        localStorage.setItem('email', email);
+        localStorage.setItem('password', password);
+
+        // Rediriger vers la page de connexion après inscription
+        window.location.href = 'index.html';  // Rediriger vers login (index.html)
     } else {
-        alert("Nom d'utilisateur ou mot de passe incorrect !");
+        alert('Veuillez remplir tous les champs.');
     }
 });
 
-// Gestion du lien pour créer un compte
-document.getElementById("create-account-link").addEventListener("click", function (event) {
-    event.preventDefault();
-    alert("Fonctionnalité de création de compte non implémentée pour l'instant.");
+// Gérer la connexion
+document.getElementById('login-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Empêche la soumission du formulaire par défaut
+
+    const usernameInput = document.getElementById('login-username').value;
+    const passwordInput = document.getElementById('login-password').value;
+
+    // Récupérer les données du LocalStorage
+    const storedUsername = localStorage.getItem('username');
+    const storedPassword = localStorage.getItem('password');
+
+    // Vérifier les identifiants
+    if (usernameInput === storedUsername && passwordInput === storedPassword) {
+        alert('Connexion réussie !');
+        window.location.href = 'index.html';  // Rediriger vers la page principale après connexion
+    } else {
+        alert('Nom d\'utilisateur ou mot de passe incorrect.');
+    }
 });
