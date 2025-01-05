@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titre de la page ou de l'onglet -->
+    <title>Die lit</title>
+    <!-- Icône de l'onglet -->
+    <link rel="shortcut icon" href="./JJJ.webp">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="YVL">
+        <H2 class="Young">YOUNG</H2>
+        <H2 class="VAMP">VAMP</H2>
+    </div>
+    <div class="HKR">
+        <img class="HK" src="./WhatsApp Image 2025-01-04 à 07.27.07_f9b4fb2b.jpg" height="300" alt="pdlp">
+    </div>
+    <nav>
+        <!-- UL= Unordered List -->
+        <UL>
+            <!-- li = liste -->
+            <a href="#Formulaire">Formulaire</a> : lien vers la partie formulaire /
+            <li>Acceuil</li>
+            <li>Boutique</li>
+
+        </UL>
+    </nav>
+    <br>
+    <header>
+        <!-- h1 permet de mettre des titres. NB un seul H1 par page-->
+        <h1>I AM MUSIC</h1>
+        <!-- P = paragraphe -->
+        <br>
+
+        <p>
+            Playboi next album <en>is named</en> <strong>I AM MUSIC.</strong>
+        </p>
+        <!-- Loremm30 poure créer du faux texte (30 = nb caractère) -->
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, quo. Facilis eos et eveniet error
+            necessitatibus
+            animi, perspiciatis, ut perferendis voluptates eligendi recusandae amet alias provident ab! Deleniti,
+            ipsum
+            libero!
+        </p>
+
+    </header>
+
+
+    <main>
+        <br>
+        <section>
+            <h2>SNIPPET VALIDE</h2>
+            <!-- OL =Ordered List -->
+            <Li>Drug Got me numb</Li>
+            <Li>Young Vamp Love</Li>
+            <Li>Walk</Li>
+        </section>
+
+        <br>
+
+        <section>
+            <h3><span>&#129499;</span>Cover</h3>
+            <!-- img = rajouter une image -->
+            <img src="./JJJJJJ.jpg" height="200" alt="Image de la cover">
+            <!-- alt = affichage d'un texte descriptif de l'image au cas où l'image ne s'affiche pas -->
+
+
+            <div><!-- div = inserer un new truc en deuspi (tableau, texte,..) -->
+                <h4>Tableau</h4>
+                <!-- Table = Tableau  -->
+                <!-- Border = bordure  -->
+                <!-- Cellpadding=pour écarter intérieur case 
+         cellspacing= pour ecarter les cases entre elles et style pour aligner/centrer -->
+                <Table border="4" cellpadding="10" cellspacing="4" style="text-align: center">
+                    <!-- Thead = en tête du tableau (première ligne tableau) -->
+                    <Thead>
+                        <!-- Tr (trow) = créer une ligne  -->
+                        <tr>
+                            <!-- th = Ajout colonne d'entete/ td =  colonne normal -->
+                            <th>Col 1</th>
+                            <th>Col 2</th>
+                            <th>Col 3</th>
+                        </tr>
+                    </Thead>
+
+                    <Tbody>
+                        <tr>
+                            <td rowspan="2">Cell1</td>
+                            <td>Cell2</td>
+                            <td>Cell3</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Cell4</td>
+                        </tr>
+
+                    </Tbody>
+
+                </Table>
+            </div>
+            <div>
+                <h5>Les Liens</h5>
+                <!-- a = anchor et permet d'insérer un lien  -->
+                <!-- Target="_blank" = ouvrir le lien dans un autre onglet  -->
+                <a href="https://htmlcheatsheet.com" Target="_blank">HTML Cheat Sheet</a>
+
+            </div>
+            <br>
+            <div>
+                <h6 class="SB"><i>&#127909;</i>STOP BREATHING LIVE FINSTA</h6>
+                <video src="./videoplayback.mp4" autoplay loop controls muted height="500"></video>
+            </div>
+        </section>
+        <br>
+        <section id="Formulaire">
+            <H2>Les formulaires</H2>
+            <!-- <form action=""></form> = où vont les donner une fois le formulaire soumis  -->
+            <form action="">
+                <!-- for="name" est connecté à l'id de l'input id="name"  -->
+                <br>
+                <label for="name">Nom</label>
+                <!-- input"Type" = Création bloc permettant de saisir direcement sur le site  -->
+                <input type="text" id="name" placeholder="Entrez votre nom" />
+                <br>
+                <br>
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Entrez votre age" />
+                <br>
+                <br>
+
+                <label for="Fav">Fav song</label>
+                <select id="fav">
+                    <option value="Long time">Long time</option>
+                    <option value="Stop Breathing">Stop Breathing</option>
+                </select>
+                <br>
+                <div>
+                    <input type="radio" name="type" id="2024">
+                    <label for="2024">2024 MUSIC</label>
+                    <input type="radio" name="type" id="2025">
+                    <label for="2025">2025 MUSIC</label>
+                </div>
+                <br>
+                <textarea placeholder="Leave a comment" cols="20" rows="5"></textarea>
+                <br>
+                <br>
+
+                <input type="checkbox" id="Check">
+                <label for="Check">Accept that your a real opium</label>
+
+                <input type="submit" value="Validate">
+
+            </form>
+            <br>
+            <button>Bouton</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Mail et envoi de fichier  -->
+        <a href="mailto:bilmoussa59@gmail.com ">Let's catch up</a>
+        <br>
+
+        <a href="./JFor my users">Dowload that</a>
+    </footer>
+</body>
+
+</html>
