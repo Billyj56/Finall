@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+head {}
+
+
+.YVL {
+    display: flex;
+    justify-content: center;
+    /* Aligne verticalement */
+    width: 100%;
+    /* Prend toute la largeur de la page */
+    position: relative;
+    /* Permet de positionner des enfants en absolu */
+}
+
+.Young {
+    position: absolute;
+    letter-spacing: 3px;
+    /*espacement caractères*/
+    font-size: 5rem;
+    /*Taile police*/
+    text-shadow: 5px 1px 5px #5d303094;
+    color: white;
+    background-color: black;
+    /* font family = police  */
+    font-family: "Jersey 15", serif;
+    align-content: center;
+    /* Position l'image indépendamment de la mise en page ( évite toute pertubation de main) */
+    left: 13.5%;
+    /* La place à l'extrémité gauche */
+    top: 50%;
+    /* Aligne verticalement */
+    transform: translateY(-0%);
+    /* Centrage vertical */
+    max-width: 30%;
+    /* Ajustez la taille de l'image */
+    height: auto;
+    /* Maintient le ratio de l'image */
+}
+
+.VAMP {
+    position: absolute;
+    letter-spacing: 3px;
+    /*espacement caractères*/
+    font-size: 5rem;
+    /*Taile police*/
+    text-shadow: 5px 1px 5px #5d303094;
+    color: white;
+    background-color: black;
+    /* font family = police  */
+    font-family: "Jersey 15", serif;
+    align-content: center;
+    /* Position l'image indépendamment de la mise en page ( évite toute pertubation de main) */
+    right: 13.5%;
+    /* La place à l'extrémité gauche */
+    top: 50%;
+    /* Aligne verticalement */
+    transform: translateY(-0%);
+    /* Centrage vertical */
+    max-width: 30%;
+    /* Ajustez la taille de l'image */
+    height: auto;
+    /* Maintient le ratio de l'image */
+}
+
+
+
+.HKR {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    /*Text en majuscule*/
+    letter-spacing: 3px;
+    /*espacement caractères*/
+    text-align: center;
+    /*Positionnement*/
+    font-size: 3.5rem;
+    /*Taile police*/
+    text-shadow: 5px 1px 5px #5d303094;
+    color: white;
+    background-color: black;
+    /* font family = police  */
+    font-family: "Jersey 15", serif;
+}
+
+
+* {
+    margin: 0 auto;
+    list-style: none;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
