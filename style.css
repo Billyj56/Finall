@@ -17,7 +17,7 @@ head {}
     position: absolute;
     letter-spacing: 3px;
     /*espacement caractères*/
-    font-size: 5rem;
+    font-size: 2.5rem;
     /*Taile police*/
     text-shadow: 5px 1px 5px #5d303094;
     color: white;
@@ -42,7 +42,7 @@ head {}
     position: absolute;
     letter-spacing: 3px;
     /*espacement caractères*/
-    font-size: 5rem;
+    font-size: 2.5rem;
     /*Taile police*/
     text-shadow: 5px 1px 5px #5d303094;
     color: white;
