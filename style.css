@@ -3,7 +3,8 @@
 head {}
 
 body {
-    background: url(Sans\ titre-1.jpg)center/cover;
+    background: url(Sans\ titre.jpg)center/cover;
+    min-height: 10vh;
 }
 
 .YVL {
